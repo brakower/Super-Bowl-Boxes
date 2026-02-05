@@ -1,6 +1,6 @@
-# Superbowl Boxes
+# Super Bowl Boxes
 
-Superbowl Boxes app for friends and family built with React, Vite, TypeScript, and Redux Toolkit. Users can claim a square by entering their name, randomize score digits, and track winners by quarter.
+Super Bowl Boxes app for friends and family built with React, Vite, TypeScript, and Redux Toolkit. Users can claim a square by entering their name, randomize score digits, and track winners by quarter.
 
 ## Features
 

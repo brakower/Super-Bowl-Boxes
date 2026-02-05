@@ -185,11 +185,11 @@ function App() {
     <div className="app">
       <header className="hero">
         <div className="hero-text">
-          <p className="eyebrow">Superbowl Boxes</p>
+          <p className="eyebrow">Super Bowl Boxes</p>
           <h1>Claim a square. Track the score. Win quick cash.</h1>
           <p className="subhead">
             Pick a square in the grid. Once digits are randomized,
-            match the last digit of each team’s score to win quarter prizes.   $10 per box must be sent to @benny-rak on Venmo with the caption "SuperBowl Box" or your box will be
+            match the last digit of each team’s score to win quarter prizes.   $10 per box must be sent to @benny-rak on Venmo with the caption "Super Bowl Box" or your box will be
               removed.
           </p>
         </div>
@@ -256,7 +256,7 @@ function App() {
             </div>
           </div>
 
-          <div className="grid" role="grid" aria-label="Superbowl boxes">
+          <div className="grid" role="grid" aria-label="Super Bowl boxes">
             <div className="corner">Last Digit</div>
             {colDigits.map((digit, colIndex) => (
               <div key={`col-${colIndex}`} className="digit-label">
@@ -301,7 +301,7 @@ function App() {
           <div className="card">
             <h3>Payment</h3>
             <p className="muted">
-              $10 per box must be sent to @benny-rak on Venmo with the caption "SuperBowl Box" or your box will be
+              $10 per box must be sent to @benny-rak on Venmo with the caption "Super Bowl Box" or your box will be
               removed.
             </p>
             <ul className="muted">
