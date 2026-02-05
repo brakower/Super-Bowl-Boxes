@@ -1,44 +1,39 @@
 # Super Bowl Boxes
 
-Super Bowl Boxes app for friends and family built with React, Vite, TypeScript, and Redux Toolkit. Users can claim a square by entering their name, randomize score digits, and track winners by quarter.
+Super Bowl Boxes is a polished, real‑time web app for running a classic 10×10 squares pool. It focuses on a clean, mobile‑friendly UI, fast interactions, and reliable synchronization of box claims across devices. The project demonstrates frontend architecture, state management, and realtime data integration with a PostgreSQL backend.
 
-## Features
+## Project overview
 
-- $10\times10$ grid with randomized score digits
-- Click-to-select boxes and save names
-- Clear and reset actions
-- Responsive, NFL-inspired styling
+The app lets users:
 
-## Scripts
+- Claim a square on a 10×10 grid by entering their name
+- See team labels and score digit headers
+- View payment rules and payout structure
+- Sync all selections in realtime so the board stays consistent across devices
 
-```bash
-npm run dev
-npm run build
-npm run preview
-```
+The UI is designed with a sporty, NFL‑inspired theme while remaining readable and responsive. The grid supports horizontal scrolling on small screens to keep the full 10×10 experience intact on mobile.
 
-## State Management
+## Engineering highlights
 
-Redux Toolkit stores box entries, selected square, and randomized digits. See:
+- **State modeling:** Redux Toolkit is used to model the grid entries, selected square, and digits, giving predictable state updates and clean reducer logic.
+- **Realtime sync:** Supabase (PostgreSQL + realtime) broadcasts changes so any claim is reflected instantly for all users.
+- **Type safety:** TypeScript enforces consistent data shapes for rows, digits, and payloads, reducing runtime errors.
+- **Resilient UI:** The interface handles empty digits and unconfigured backend states gracefully.
+- **Responsive layout:** The board and sidebar adapt to smaller screens without losing usability.
 
-- [src/boxesSlice.ts](src/boxesSlice.ts)
-- [src/store.ts](src/store.ts)
+## Technology stack
 
-## Realtime Sync (PostgreSQL via Supabase)
+- React + Vite for fast, modern UI development
+- TypeScript for safety and clarity
+- Redux Toolkit for centralized state management
+- Supabase (PostgreSQL + realtime) for data persistence and live updates
 
-Set the following environment variables in a local .env file or in your hosting provider:
+## Why this project represents me well
 
-```
-VITE_SUPABASE_URL=
-VITE_SUPABASE_ANON_KEY=
-```
+This project demonstrates my ability to:
 
-Create these tables in your PostgreSQL database (Supabase recommended):
-
-- boxes (id int primary key, name text)
-- digit_settings (id int primary key, row_digits jsonb, col_digits jsonb)
-
-The app reads/writes:
-
-- boxes: one row per square (id 0–99)
-- digit_settings: a single row with id=1
+- Build a complete, user‑facing product with thoughtful UX
+- Structure application state cleanly in Redux and keep UI in sync
+- Integrate a realtime PostgreSQL backend with frontend state
+- Design a polished, responsive UI for desktop and mobile
+- Deliver a focused, production‑ready app with clear requirements
