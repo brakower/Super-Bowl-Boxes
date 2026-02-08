@@ -186,10 +186,11 @@ function App() {
       <header className="hero">
         <div className="hero-text">
           <p className="eyebrow">Super Bowl Boxes</p>
-          <h1>Claim a square. Track the score. Win quick cash.</h1>
+          {/* <h1>Claim a square. Track the score. Win quick cash.</h1> */}
+          <h1>*Disclaimer*: All boxes are now $5. Everyone should have 2x the amt of boxes they selected. All prizes have been halved.</h1>
           <p className="subhead">
             Pick a square in the grid. Once digits are randomized,
-            match the last digit of each team’s score to win quarter prizes.   $10 per box must be sent to @benny-rak on Venmo with the caption "Super Bowl Box" or your box will be
+            match the last digit of each team’s score to win quarter prizes.   $5 per box must be sent to @benny-rak on Venmo with the caption "Super Bowl Box" or your box will be
               removed.
           </p>
         </div>
@@ -301,14 +302,14 @@ function App() {
           <div className="card">
             <h3>Payment</h3>
             <p className="muted">
-              $10 per box must be sent to @benny-rak on Venmo with the caption "Super Bowl Box" or your box will be
+              $5 per box must be sent to @benny-rak on Venmo with the caption "Super Bowl Box" or your box will be
               removed.
             </p>
             <ul className="muted">
-              <li>1Q score: $150</li>
-              <li>3Q score: $150</li>
-              <li>Halftime: $200</li>
-              <li>Final: $400</li>
+              <li>1Q score: $75</li>
+              <li>3Q score: $75</li>
+              <li>Halftime: $125</li>
+              <li>Final: $225</li>
             </ul>
           </div>
 
